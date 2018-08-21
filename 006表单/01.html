@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link href="../lib/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+  <h1>表单</h1>
+  <!--form-group-->
+  <!--为 <form> 元素添加 .form-inline 类可使其内容左对齐并且表现为 inline-block 级别的控件。只适用于视口（viewport）至少在 768px 宽度时（视口宽度再小的话就会使表单折叠）。-->
+  <form action="" class="form-inline">
+    <div class="form-group">
+      <lable>姓名</lable>
+      <input type="text" class="form-control" placeholder="name">
+    </div>
+    <div class="form-group">
+      <lable>年龄</lable>
+      <input type="text" class="form-control" placeholder="old">
+    </div>
+    <br><br>
+    <div class="form-group">
+      <!--不为每个输入控件设置 label 标签，屏幕阅读器无法正确识别 label 标签 ，为 label 设置 .sr-only 类将其隐藏-->
+      <label class="sr-only">input</label>
+      <input type="file">
+      <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <br><br>
+  </form>
+  <!--水平排列的表单-->
+  <h3>水平排列的表单</h3>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <lable class="col-sm-2 control-label">Email</lable>
+      <div class="col-sm-10">
+        <input disabled  type="email" class="form-control" placeholder="Email" >
+      </div>
+    </div>
+    <div class="form-group">
+      <lable class="col-sm-2 control-label">passWord</lable>
+      <div class="col-sm-10">
+        <input type="passWord" class="form-control" placeholder="passWord">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10 ">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">Remember me
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success">Sign in</button>
+      </div>
+    </div>
+  </form>
+  <h3>文本域</h3>
+  <textarea class="form-control" rows="3"></textarea>
+  <h3>多选和单选框</h3>
+  <!--通过将 .checkbox-inline 或 .radio-inline 类应用到一系列的多选框（checkbox）或单选框（radio）控件上，可以使这些控件排列在一行。-->
+  <div  class="checkbox">
+    <label>
+      <input type="checkbox" value="">111
+    </label>
+  </div>
+  <div  class="checkbox disabled">
+    <label>
+      <input type="checkbox" value="">222
+    </label>
+  </div>
+  <br>
+  <div class="radio">
+    <label class="radio-inline">
+      <input type="radio" name="optionsRadios"   checked>111
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optionsRadios"  >111
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optionsRadios"  disabled>111
+    </label>
+  </div>
+  <!--不带label文本的Checkbox 和 radio-->
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="blankCheckbox">
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" id="blankRadio1" >
+    </label>
+  </div>
+  <!--下拉列表-->
+  <select class="form-control"  name="" id="">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <!--静态控件-->
+  <form action="" class="form-horizontal">
+    <!--表单中将一行纯文本和 label 元素放置于同一行，为 <p> 元素添加 .form-control-static-->
+    <div class="form-group">
+      <lable class="col-sm-2 control-label">Email</lable>
+      <div class="col-sm-10">
+        <p class="form-control-static">email@meatball@qq.com</p>
+      </div>
+    </div>
+  </form>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/bootstrap.min.js"></script>
+</body>
+</html>

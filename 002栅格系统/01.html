@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link href="../lib/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .show-grid {
+      margin-bottom: 15px;
+    }
+    .show-grid [class^=col-] {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #eee;
+      background-color: rgba(86,61,124,.15);
+      border: 1px solid #ddd;
+      border: 1px solid rgba(86,61,124,.2);
+    }
+  </style>
+</head>
+<body>
+<!--从堆叠到水平排列-->
+<div class="container">
+  <h1>从堆叠到水平排列</h1>
+  <div class="row show-grid">
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+  </div>
+  <div class="row show-grid">
+    <div class="col-md-8">col-md-8</div>
+    <div class="col-md-4">col-md-4</div>
+  </div>
+  <div class="row show-grid">
+    <div class="col-md-4">col-md-4</div>
+    <div class="col-md-4">col-md-4</div>
+    <div class="col-md-4">col-md-4</div>
+  </div>
+  <div class="row show-grid">
+    <div class="col-md-6">col-md-6</div>
+    <div class="col-md-6">col-md-6</div>
+  </div>
+</div >
+<br><br>
+<!--移动设备和桌面屏幕-->
+<div class="container">
+  <h3>移动设备和桌面屏幕</h3>
+  <div class="row show-grid">
+    <div class="col-xs-6 col-md-8">.col-xs-6 .col-md-8</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  </div>
+  <div class="row show-grid">
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  </div>
+  <div class="row show-grid">
+    <div class="col-xs-6">.col-xs-6</div>
+    <div class="col-xs-6">.col-xs-6</div>
+  </div>
+</div >
+<br><br>
+<!--响应式列重置-->
+<div class="container">
+  <h3>响应式列重置</h3>
+  <div class="row show-grid">
+    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3 Resize your viewport or check it out on your phone for an example.</div>
+    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    <!-- Add the extra clearfix for only the required viewport -->
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+  </div>
+  <br><br>
+  <div class="row show-grid">
+    <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+    <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+  </div>
+  <div class="row show-grid">
+    <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+    <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+  </div>
+</div >
+<!--列偏移-->
+<div class="container">
+  <h1>列偏移</h1>
+  <div class="row show-grid">
+    <div class="col-md-4">col-md-4</div>
+    <div class="col-md-4 col-md-offset-4">col-md-4 col-md-offset-4</div>
+  </div>
+  <div class="row show-grid">
+    <div class="col-md-3 col-md-offset-3">col-md-3 col-md-offset-3</div>
+    <div class="col-md-3 col-md-offset-3">col-md-3 col-md-offset-3</div>
+  </div>
+  <div class="row show-grid">
+    <div class="col-md-6 col-md-offset-3">col-md-6 col-md-offset-3</div>
+  </div>
+</div>
+<!--嵌套列-->
+<div class="container">
+  <h1>嵌套列</h1>
+  <div class="row show-grid">
+    <div class="col-sm-9">
+      col-sm-9
+      <div class="row">
+        <div class="col-xs-8 col-sm-6">col-xs-8 col-sm-6</div>
+        <div class="col-xs-4 col-sm-6">col-xs-4 col-sm-6</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--列排序-->
+<div class="container">
+  <h1>列排序</h1>
+  <div class="row show-grid">
+    <div class="col-md-9 col-md-push-3">col-md-9 col-md-push-3</div>
+    <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+  </div>
+  </div>
+
+</div>
+<br><br>
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/bootstrap.min.js"></script>
+</body>
+</html>
