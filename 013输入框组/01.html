@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+  <h1>输入框组</h1>
+  <h3> input-group-lg尺寸</h3>
+  <div class="input-group input-group-lg">
+    <span class="input-group-addon" id="name">@</span>
+    <input type="text" class="form-control"placeholder="Username" aria-describedby="name">
+  </div>
+  <div class="input-group input-group-sm">
+    <input type="text" class="form-control"placeholder="Username" aria-describedby="name1">
+    <span class="input-group-addon" id="name1">@meatball</span>
+  </div>
+  <div class="input-group input-group-xs">
+    <span class="input-group-addon" id="name1">@meatball</span>
+    <input type="text" class="form-control"placeholder="Username" aria-describedby="name1">
+    <span class="input-group-addon" id="name1">@meatball</span>
+  </div>
+  <h3>作为额外元素的多选框和单选框</h3>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <!--复选-->
+          <input type="checkbox" aria-label="...">
+          <!--单选-->
+          <input type="radio" aria-label="...">
+        </span>
+        <input type="text" class="form-control" aria-label="...">
+      </div>
+    </div>
+  </div>
+  <h3>作为额外元素的按钮</h3>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="button">Go!</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Search for...">
+      </div>
+    </div>
+  </div>
+  <h3>作为额外元素的按钮式下拉菜单</h3>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button type="button"
+                  class="btn btn-default dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">Action
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">aaa</a></li>
+            <li><a href="#">bbb</a></li>
+            <li><a href="#">ccc</a></li>
+            <li><a href="#">ddd</a></li>
+          </ul>
+        </div>
+        <input type="text" class="form-control" aria-label="...">
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/bootstrap.min.js"></script>
+</body>
+</html>

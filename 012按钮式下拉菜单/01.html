@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+  <h1>按钮式下拉菜单</h1>
+  <div class="btn-group">
+    <button type="button"
+            class="btn btn-default dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+      Action <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <h1>分裂式按钮下拉菜单</h1>
+  <div class="btn-group">
+    <button type="button"
+            class="btn-default btn">
+      Action
+    </button>
+    <button type="button"
+            class="btn btn-danger dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <h1>尺寸btn-xs</h1>
+  <div class="btn-group">
+    <button class="btn btn-default btn-lg dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">大按钮
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">...</ul>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-default btn-sm dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+      小按钮
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">...</ul>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-default btn-xs dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+      迷你按钮
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">...</ul>
+  </div>
+  <h1>向上弹出式菜单dropup</h1>
+  <div class="btn-group dropup">
+    <button type="button"
+            class="btn btn-default">向上弹出</button>
+    <button type="button"
+            class="btn btn-default dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      ...
+    </ul>
+  </div>
+</div>
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+  <h1>导航</h1>
+  <h3>标签页nav-tabs</h3>
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active">
+      <a href="#">111</a>
+    </li>
+    <li role="presentation">
+      <a href="#">222</a>
+    </li>
+    <li role="presentation">
+      <a href="#">333</a>
+    </li>
+  </ul>
+  <h3>胶囊式标签页nav-pills</h3>
+  <h4>胶囊是标签页也是可以垂直方向堆叠排列的。只需添加 .nav-stacked 类。</h4>
+  <ul class="nav nav-pills nav-stacked">
+    <li role="presentation" class="active">
+      <a href="#">111</a>
+    </li>
+    <li role="presentation">
+      <a href="#">111</a>
+    </li>
+    <li role="presentation">
+      <a href="#">111</a>
+    </li>
+  </ul>
+  <h3>禁用的链接disabled</h3>
+  <ul class="nav nav-pills">
+    <li role="presentation" class="disabled">
+      <a href="#">disabled</a>
+    </li>
+    <li role="presentation">
+      <a href="#">disabled</a>
+    </li>
+    <li role="presentation">
+      <a href="#">disabled</a>
+    </li>
+  </ul>
+  <h3>添加下拉菜单dropdown</h3>
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="dropdown">
+      <a href="#"
+          class="dropdown-toggle"
+          data-toggle="dropdown"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false">Dropdown
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>111</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/bootstrap.min.js"></script>
+</body>
+</html>
