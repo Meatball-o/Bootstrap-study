@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+  <h1>警告框</h1>
+  <div class="alert alert-success" role="alert"><b>alert-danger! </b>alert-success</div>
+  <div class="alert alert-info" role="alert">alert-info</div>
+  <div class="alert alert-warning" role="alert">alert-warning</div>
+  <div class="alert alert-danger" role="alert">alert-danger</div>
+  <h1>可关闭的警告框alert-dismissible</h1>
+  <div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close">
+      <span aria-hidden="true">
+        &times;
+      </span>
+    </button>
+    <b>alert-danger! </b>
+    alert-success
+  </div>
+  <div class="alert alert-info alert-dismissable" role="alert">
+    <button type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close">
+      <span aria-hidden="true">
+        &times;
+      </span>
+    </button>
+    alert-info
+  </div>
+  <div class="alert alert-warning alert-dismissable" role="alert">
+    <button type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close">
+      <span aria-hidden="true">
+        &times;
+      </span>
+    </button>
+    alert-warning
+  </div>
+  <div class="alert alert-danger alert-dismissable" role="alert">
+    <button type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close">
+      <span aria-hidden="true">
+        &times;
+      </span>
+    </button>
+    alert-danger
+  </div>
+  <h1>警告框中的链接alert-link</h1>
+  <div class="alert alert-success" role="alert">
+    <a href="#" class="alert-link">
+      alert-success
+    </a>
+  </div>
+  <div class="alert alert-info" role="alert">
+    <a href="#" class="alert-link">
+      alert-info
+    </a>
+  </div>
+  <div class="alert alert-warning" role="alert">
+    <a href="#" class="alert-link">
+      alert-warning
+    </a>
+  </div>
+  <div class="alert alert-danger" role="alert">
+    <a href="#" class="alert-link">
+      alert-danger
+    </a>
+  </div>
+</div>
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/bootstrap.min.js"></script>
+</body>
+</html>
